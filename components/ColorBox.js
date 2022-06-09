@@ -5,9 +5,15 @@ const ColorBox = ({ colorName, colorHex }) => {
   const boxColor = {
     backgroundColor: colorHex,
   };
+  const textColor = {
+    color:
+      parseInt(colorHex.replace("#", ""), 16) > 0xffffff / 1.1
+        ? "black"
+        : "white",
+  };
   return (
     <View style={[boxColor, styles.viewSizeColorBox]}>
-      <Text style={styles.textWhite}>
+      <Text style={[styles.textWhite, textColor]}>
         {colorName}: {colorHex}
       </Text>
     </View>

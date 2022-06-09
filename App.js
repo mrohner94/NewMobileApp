@@ -38,7 +38,7 @@ const App = () => {
   ];
   return (
     <SafeAreaView style={styles.AndroidSafeArea}>
-      <View style={styles.container}>
+      <View style={[styles.container]}>
         <Text style={styles.heading}>
           Here are some boxes of different colors
         </Text>
@@ -58,6 +58,9 @@ const styles = StyleSheet.create({
   heading: {
     fontWeight: "bold",
     fontSize: 18,
+  },
+  bottomShow: {
+    marginBottom: 240,
   },
   textWhite: {
     color: "#FFF",
@@ -84,7 +87,6 @@ const styles = StyleSheet.create({
   },
   container: {
     alignContent: "center",
-    justifyContent: "center",
     paddingHorizontal: 10,
     paddingTop: 40,
   },

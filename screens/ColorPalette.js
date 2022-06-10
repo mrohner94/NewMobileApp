@@ -10,7 +10,7 @@ const ColorPalette = ({ route }) => {
       data={colors}
       keyExtractor={(item) => item.colorName}
       renderItem={({ item }) => (
-        <ColorBox colorName={item.colorName} colorHex={item.colorHex} />
+        <ColorBox colorName={item.colorName} hexCode={item.hexCode} />
       )}
       ListHeaderComponent={<Text style={styles.text}>{paletteName}</Text>}
     />

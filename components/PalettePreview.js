@@ -16,7 +16,7 @@ const PalettePreview = ({ palette, handlePress }) => {
         data={palette.colors.slice(0, 5)}
         keyExtractor={(item) => item.colorName}
         renderItem={({ item }) => (
-          <View style={[{ backgroundColor: item.colorHex }, styles.box]}></View>
+          <View style={[{ backgroundColor: item.hexCode }, styles.box]}></View>
         )}
       />
     </TouchableOpacity>

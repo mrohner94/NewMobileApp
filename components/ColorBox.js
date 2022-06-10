@@ -31,18 +31,11 @@ const styles = StyleSheet.create({
     marginVertical: 8,
     justifyContent: "center",
     alignItems: "center",
-  },
-  cyan: {
-    backgroundColor: "#2aa198",
-  },
-  blue: {
-    backgroundColor: "#268bd2",
-  },
-  magenta: {
-    backgroundColor: "#d33682",
-  },
-  orange: {
-    backgroundColor: "#cb4b16",
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.3,
+    shadowRadius: 1,
+    elevation: 2,
   },
 });
 
